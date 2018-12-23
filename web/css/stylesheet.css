@@ -1,0 +1,42 @@
+.heading {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.tableData {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+}
+
+
+.tableDataBold {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+
+.cmdButton {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.box {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #336699;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #336699;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #336699;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #336699; 
+}
+

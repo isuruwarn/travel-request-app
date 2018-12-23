@@ -1,0 +1,12 @@
+<html>
+<script>
+function loadMainPage() {
+	document.mainForm.action = "/TravelRequestApp/travel_request_main?mode=load";
+	document.mainForm.submit();
+}
+</script>
+<body onload="loadMainPage()">
+<form name=mainForm method=post>
+</form>
+</body>
+</html>

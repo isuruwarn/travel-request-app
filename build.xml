@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TravelRequestApplication" default="war">
+	
+	<target name="clean1">
+		<delete dir="build/classes"/>
+		<delete dir="dist"/>
+	</target>
+	
+	<target name="init" depends="clean1">
+		<mkdir dir="build/classes"/>
+		<mkdir dir="dist"/>
+	</target>
+	
+	<target name="compile" depends="init">
+		<javac srcdir="com" debug="true" destdir="build/classes">
+			<classpath refid="compile.classpath"/>
+		</javac>
+	</target>
+	
+	<path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="j2ee.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="war" depends="compile">
+		<war destfile="dist/TravelRequestApp.war" webxml="web.xml">
+		<!--war destfile="F:/JBoss/jboss-4.0.5.GA/server/default/deploy/TravelRequestApp.war" webxml="web.xml"-->
+			<fileset dir="web"/>
+			<classes dir="build/classes"/>
+		</war>
+	</target>
+	
+</project>
